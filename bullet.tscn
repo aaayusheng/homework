@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://daxbp1dovm7a0"]
+
+[ext_resource type="Script" uid="uid://ssls200hu2jp" path="res://bullet.gd" id="1_v7oki"]
+[ext_resource type="Texture2D" uid="uid://f5b01mew3lpx" path="res://BgSub_ims.png" id="2_v8qja"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_taejo"]
+radius = 10.198039
+
+[node name="bullet" type="Area2D" unique_id=618597688]
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_v7oki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1515722306]
+shape = SubResource("CircleShape2D_taejo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1576770360]
+position = Vector2(0.2500009, 0.0625003)
+scale = Vector2(0.04493464, 0.044542905)
+texture = ExtResource("2_v8qja")

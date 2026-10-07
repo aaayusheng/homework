@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://doqhs3chi06lv"]
+
+[ext_resource type="Texture2D" uid="uid://5uwsbp4v0dqx" path="res://BgSub_2BCB904421DAC3AA2B6614A204DF2D83.png" id="1_0bnu1"]
+[ext_resource type="Script" uid="uid://dxowckwskhrri" path="res://boss.gd" id="1_6xxrv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_taejo"]
+size = Vector2(238, 365)
+
+[node name="Boss" type="CharacterBody2D" unique_id=181668286]
+script = ExtResource("1_6xxrv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1717667650]
+position = Vector2(-2, -1.5)
+shape = SubResource("RectangleShape2D_taejo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=28150222]
+position = Vector2(-1.3750017, -1.1249957)
+scale = Vector2(0.33390176, 0.4394025)
+texture = ExtResource("1_0bnu1")
